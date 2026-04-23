@@ -13,10 +13,6 @@ public class Diagnostico implements Cloneable {
         this.descripcion = descripcion;
     }
 
-    public void clon() {
-        this.descripcion = this.descripcion;
-    }
-
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
