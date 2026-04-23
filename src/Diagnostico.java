@@ -1,4 +1,4 @@
-public class Diagnostico {
+public class Diagnostico implements Cloneable {
     private String descripcion;
 
     public Diagnostico(String descripcion) {
@@ -14,5 +14,9 @@ public class Diagnostico {
     }
     public void clon(){
         this.descripcion = this.descripcion;
+    }
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
