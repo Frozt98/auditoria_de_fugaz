@@ -17,4 +17,9 @@ public class Diagnostico implements Cloneable {
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+    @Override
+    public String toString() {
+        return "Diagnostico{descripcion='" + descripcion + "'}";
+    }
 }
